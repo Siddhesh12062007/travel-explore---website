@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar solid">
+    <a class="logo" href="index.html">Travel<span>Explorer</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Places</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">CONTACT / FEEDBACK</p>
+      <h1>Tell us about your trip</h1>
+      <p>Fill in the form below. After Google Sheets is connected, your response will be stored there.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>We would love to hear from you.</h2>
+        <p>Use this form to send a question, suggestion or feedback about the website.</p>
+        <div class="info-item"><strong>📧 Email</strong><span>hello@travelexplorer.example</span></div>
+        <div class="info-item"><strong>📍 Location</strong><span>India</span></div>
+        <div class="info-item"><strong>⏰ Response</strong><span>Usually within 1–2 days</span></div>
+      </div>
+
+      <form id="feedbackForm" class="form-card">
+        <label for="name">Full Name *</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+
+        <label for="destination">Favourite Destination</label>
+        <select id="destination" name="destination">
+          <option value="">Select one</option>
+          <option>Himalayas</option>
+          <option>Goa</option>
+          <option>Jaipur</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Message / Feedback *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your feedback..." required></textarea>
+
+        <button class="btn" type="submit">Submit Feedback</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Travel Explorer | Student Web Project</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
